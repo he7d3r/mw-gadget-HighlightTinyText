@@ -5,7 +5,7 @@
  */
 ( function ( mw, $ ) {
 	'use strict';
-	var minFontSize = 10;
+	var minFontSize = 9;
 
 	function addHighlightLink() {
 		$( mw.util.addPortletLink(
