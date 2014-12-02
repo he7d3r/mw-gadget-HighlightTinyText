@@ -13,3 +13,5 @@ Installation
   ```
 
 3. Clear the cache of your browser.
+
+This will import the minified copy of the script I maintain on Meta-wiki.
