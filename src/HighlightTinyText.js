@@ -1,5 +1,6 @@
 /**
  * Add a link to highligh tiny text
+ *
  * @author: Helder (https://github.com/he7d3r)
  * @license: CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0/>
  */
@@ -16,7 +17,8 @@
 			'Hightlight elements whose font-size is too small'
 		) ).click( function ( e ) {
 			$( '*' ).filter( function () {
-				return parseInt( $( this ).css( 'font-size' ), 10 ) < minFontSize;
+				var size = parseInt( $( this ).css( 'font-size' ), 10 );
+				return size > 0 && size < minFontSize;
 			} ).css( 'background-color', 'red' );
 		} );
 	}
